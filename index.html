@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+    <h1>Snake</h1>
+
+    <div class="hud">
+      <span class="score">Score: <span id="score">0</span></span>
+      <span class="best">Best: <span id="best">0</span></span>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="game-canvas" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <p id="overlay-title">Press any arrow key to start</p>
+        <p id="overlay-message"></p>
+        <button id="restart-btn" class="restart-btn" hidden>Play again</button>
+      </div>
+    </div>
+
+    <p class="controls">Move: <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> or <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
